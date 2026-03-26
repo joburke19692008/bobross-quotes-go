@@ -1,0 +1,19 @@
+# PDF Extraction API - Development Requirements
+# 
+# SECURITY NOTE: pip-audit has a transitive dependency on pygments
+# which has a known vulnerability (CVE-2026-4539). This is acceptable
+# in development environments only. See security/SECURITY.md for details.
+
+# Include production requirements
+-r requirements.txt
+
+# Security scanning
+bandit>=1.7.0
+pip-audit>=2.6.0
+
+# Testing
+pytest>=7.0.0
+
+# Code formatting (optional)
+black>=23.0.0
+isort>=5.12.0
