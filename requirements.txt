@@ -1,0 +1,17 @@
+# PDF Extraction API - Production Requirements
+# No known vulnerabilities as of 2026-03-26
+
+# Core PDF extraction
+PyMuPDF>=1.24.0
+
+# API framework
+fastapi>=0.109.0
+uvicorn>=0.27.0
+python-multipart>=0.0.9
+
+# OCR support (for scanned PDFs)
+pytesseract>=0.3.10
+Pillow>=10.0.0
+
+# Structured output
+pydantic>=2.0.0
